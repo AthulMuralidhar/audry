@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "Audry",
+  "version": "1.0",
+
+  "description": "attempts to convert text on a web browser to audiou",
+
+  "icons": {
+    "48": "icons/temp.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"],
+      "js": ["audry.js"]
+    }
+  ]
+
+}
